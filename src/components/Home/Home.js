@@ -9,13 +9,20 @@ const Home = () => {
     console.log(topics.data.length);
 
     return (
-        <div className='topic-card'>
-            {
-                topics.data.map(topic => <Topic
-                    key={topic.id}
-                    topic={topic}
-                ></Topic>)
-            }
+        <div >
+            <div className='hero'>
+                <h2>Welcome to Tech Quiz</h2>
+            </div>
+            <h2 className='topic-heading'>Popular Quizes</h2>
+            <div className='topic-card'>
+
+                {
+                    topics.data.map(topic => <Topic
+                        key={topic.id}
+                        topic={topic}
+                    ></Topic>)
+                }
+            </div>
 
 
         </div>

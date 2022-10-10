@@ -1,0 +1,18 @@
+.topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: coral;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
