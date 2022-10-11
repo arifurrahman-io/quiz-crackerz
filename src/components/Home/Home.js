@@ -1,12 +1,13 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+
 import Topic from '../Topic/Topic';
 import './Home.css'
 
 const Home = () => {
 
     const topics = useLoaderData();
-    console.log(topics.data.length);
+
 
     return (
         <div >
@@ -24,8 +25,7 @@ const Home = () => {
                 }
             </div>
 
-
-        </div>
+        </div >
     );
 };
 
