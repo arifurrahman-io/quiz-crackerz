@@ -5,8 +5,6 @@ const StatisticsView = ({ myTopic }) => {
 
     const { name, total } = myTopic;
 
-    console.log(name);
-
     const data = [
         {
             name: `${name}`,

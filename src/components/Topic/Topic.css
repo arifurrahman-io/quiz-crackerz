@@ -16,3 +16,16 @@
     border-radius: 5px;
     color: white;
 }
+
+@media only screen and (max-width: 767px) {
+    .topic {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header  bg-purple-600 text-lg lg:text-2xl font-bold text-white py-3'>
+        <div className='header  bg-purple-600 text-base lg:text-2xl font-bold text-white py-3'>
             <div>
                 <h2><Link to='/'>Tech Quiz</Link></h2>
             </div>
