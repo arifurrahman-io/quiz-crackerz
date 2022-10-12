@@ -2,8 +2,10 @@
     background-color: aquamarine;
     margin: 10px;
     border-radius: 5px;
+    padding: 10px;
+    width: 80%;
 }
 
 .options:hover {
-    background-color: aqua;
+    background-color: rgb(255, 0, 136);
 }

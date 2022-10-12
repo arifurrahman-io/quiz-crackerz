@@ -11,8 +11,7 @@ const Quiz = ({ questionData }) => {
 
 
     const message = () => {
-
-        alert(correctAnswer)
+        alert('Correct answer is: ' + correctAnswer)
     }
 
     return (
@@ -27,6 +26,7 @@ const Quiz = ({ questionData }) => {
                     options.map(option => <Quistions
                         key={option}
                         option={option}
+                        correctAnswer={correctAnswer}
                     ></Quistions>)
                 }
             </div>
