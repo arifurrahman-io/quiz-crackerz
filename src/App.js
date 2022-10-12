@@ -6,6 +6,7 @@ import Blog from './components/Blog/Blog'
 import Statistics from './components/Statistics/Statistics'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import QuizData from './components/QuizData/QuizData';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
       ]
     },
     {
-      path: '*', element: <div>Page not found</div>
+      path: '*', element: <ErrorPage></ErrorPage>
     }
   ])
 

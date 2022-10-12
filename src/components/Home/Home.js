@@ -25,7 +25,6 @@ const Home = () => {
                     ></Topic>)
                 }
             </div>
-
         </div >
     );
 };

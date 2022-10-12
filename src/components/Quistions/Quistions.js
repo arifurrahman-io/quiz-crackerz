@@ -7,10 +7,10 @@ const Quistions = ({ option, correctAnswer }) => {
         console.log(option, correctAnswer);
 
         if (option === correctAnswer) {
-            alert('Your answer is correct!')
+            alert('Congratulations! Your answer is correct.')
         }
         else {
-            alert('Your answer is incorrect!')
+            alert('So sad. Your answer is not correct!')
         }
     }
 

@@ -19,11 +19,6 @@
     margin-right: 20px;
 }
 
-.topic-heading {
-    text-align: center;
-    font-size: 30px;
-}
-
 @media only screen and (max-width: 767px) {
     .topic-card {
         grid-template-columns: repeat(1, 1fr);
