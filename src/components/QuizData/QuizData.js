@@ -7,13 +7,10 @@ const QuizData = () => {
 
     const quizData = useLoaderData();
     const myQuestions = quizData.data;
-    console.log(quizData);
-
-
 
     return (
-        <div className='data-container'>
-            <h3>You are going answer from {myQuestions.name}</h3>
+        <div className='mx-48'>
+            <h3 className='text-3xl py-10'>You are answering from <span className='text-teal-700 font-bold'>{myQuestions.name}</span> </h3>
             {
                 myQuestions.questions.map(questionData => <Quiz
                     key={questionData.id}

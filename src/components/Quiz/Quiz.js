@@ -1,15 +1,27 @@
 import React from 'react';
 import Quistions from '../Quistions/Quistions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 import './Quiz.css'
 
-const Quiz = ({ questionData, myQuestions }) => {
+
+const Quiz = ({ questionData }) => {
 
     const { question, correctAnswer, options } = questionData;
 
 
+    const message = () => {
+
+        alert(correctAnswer)
+    }
+
     return (
         <div className='single-quiz'>
-            <p>{question}</p>
+
+            <div className='flex justify-between align-middle'>
+                <p>Question: {question}</p>
+                <button className='' onClick={() => message(correctAnswer)}><FontAwesomeIcon icon={faEye} /></button>
+            </div>
             <div className='q-options'>
                 {
                     options.map(option => <Quistions
@@ -18,7 +30,6 @@ const Quiz = ({ questionData, myQuestions }) => {
                     ></Quistions>)
                 }
             </div>
-            <p>{correctAnswer}</p>
         </div>
     );
 };
