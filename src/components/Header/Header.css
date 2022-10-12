@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(231, 233, 233);
 }
 
 
@@ -11,6 +10,4 @@
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: none;
-    font-size: 22px;
-    font-weight: 500;
 }
