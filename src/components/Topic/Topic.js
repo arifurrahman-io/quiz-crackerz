@@ -11,7 +11,7 @@ const Topic = ({ topic }) => {
             <div>
                 <h2>Course Title: {name}</h2>
                 <p>Number of Questions: {total}</p>
-                <p className='button'><Link to={`/quizdata/${id}`}> Start Quiz</Link></p>
+                <button className='myButton my-3'><Link to={`/quizdata/${id}`}> Start Quiz</Link></button>
             </div>
         </div>
     );

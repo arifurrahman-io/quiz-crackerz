@@ -19,7 +19,7 @@ const Quiz = ({ questionData }) => {
 
             <div className='flex justify-between align-middle'>
                 <p>Question: {question}</p>
-                <button className='' onClick={() => message(correctAnswer)}><FontAwesomeIcon icon={faEye} /></button>
+                <button className='text-purple-500' onClick={() => message(correctAnswer)}><FontAwesomeIcon icon={faEye} /></button>
             </div>
             <div className='q-options'>
                 {

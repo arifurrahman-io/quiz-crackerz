@@ -1,9 +1,21 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import StatisticsView from '../StatisticsView/StatisticsView';
+
 
 const Statistics = () => {
+
+    const myTopics = useLoaderData();
+
     return (
         <div>
-            <h2>Hello Stat</h2>
+            {
+                myTopics.data.map(myTopic => <StatisticsView
+                    key={myTopic.id}
+                    myTopic={myTopic}
+                ></StatisticsView>)
+            }
+
         </div>
     );
 };

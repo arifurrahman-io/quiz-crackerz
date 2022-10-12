@@ -8,8 +8,8 @@ const QuizData = () => {
     const myQuestions = quizData.data;
 
     return (
-        <div className='mx-48'>
-            <h3 className='text-3xl py-10'>You are answering from <span className='text-teal-700 font-bold'>{myQuestions.name}</span> </h3>
+        <div className='mx-5 lg:mx-48'>
+            <h3 className='text-3xl py-10'>You are answering from <span className='text-purple-700 font-bold'>{myQuestions.name}</span> </h3>
             {
                 myQuestions.questions.map(questionData => <Quiz
                     key={questionData.id}

@@ -3,9 +3,10 @@
     margin: 10px;
     border-radius: 5px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
 }
 
 .options:hover {
-    background-color: rgb(255, 0, 136);
+    background-color: rgb(51, 204, 184);
+    color: white;
 }
